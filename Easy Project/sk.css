@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+:root {
+    --bg-color: #fff;
+    --text-color: rgb(17, 163, 247);
+    --some-color: rgb(255, 115, 0);
+    --bgsome-color:kight orange;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: black;
+    color: var(--bg-color);
+}
+
+span {
+    color: var(--some-color);
+}
+
+.mainSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sectionOne h2 {
+    margin-top: 8rem;
+    font-size: 4rem;
+    text-align: center;
+}
+
+.sec2 {
+    margin-top: 4rem;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 700;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 2rem;
+}
+
+.content p ,
+.thmsec p{
+    justify-content: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    font-size: 1.5rem;
+    line-height: 2rem; /* Adds more space between lines */
+    text-align: center;
+}
+.content a {
+    margin: 0.5rem; /* Reduced margin for smaller spacing */
+    font-size: 1.4rem;
+    padding: 0.5rem 1rem; /* Adjust padding */
+    border: 2px solid var(--some-color);
+    color: var(--some-color);
+    text-transform: uppercase;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s, color 0.3s;
+    max-width: 100%; /* Ensure they don't overflow */
+    flex: 1 1 45%; /* Allow flexible growth with a basis of 45% */
+    box-sizing: border-box; /* Ensure padding is included in total width */
+}
+
+.content a:hover {
+    background-color: var(--some-color);
+    color: #fff;
+}
+.optionbtn{
+    display: flex;
+    margin: 1rem 0; 
+}
+@media (max-width: 600px) {
+    .optionsbtn {
+        flex-direction: column; /* Stack vertically on small screens */
+        align-items: center; /* Center items */
+    }
+    .content a {
+        width: 80%; /* Full width for anchor tags */
+        margin: 0.5rem 0; /* Vertical spacing */
+    }
+}
+.workSec h2,
+.thmsec h2,
+.contact h2{
+    margin-top: 8rem;
+    font-size: 4rem;
+    text-align: center;
+}
+.workOne video {
+    width: 100%;  /* Makes the video responsive */
+    max-width: 30rem;  /* Limits the width to 30rem */
+    height: auto;  /* Keeps the aspect ratio intact */
+    border-radius: 1rem; /* Optional: Adds rounded corners */
+    border: 2px solid var(--some-color); /* Adds a border */
+
+}
+
+.workContainer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;  /* Allows the videos to wrap on smaller screens */
+    margin-top: 4rem;
+}
+
+.workOne {
+    text-align: center;
+    margin: 2rem;
+    max-width: 21rem; /* Restricts the width of each work item */
+}
+.workContainer h3,
+.videoContainer h3{
+    font-size: 2rem;
+    margin-top: 4rem;
+}
+.videoContainer{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    margin-top: 4rem;
+
+}
+.videoOne{
+    text-align: center;
+    margin: 2rem;
+    max-width: 45%;
+}
+.videoOne video{
+    width: 60rem;
+    height: 30rem;
+    border-radius: 1rem; /* Optional: Adds rounded corners */
+    border: 2px solid var(--some-color); /* Adds a border */
+}
+.thumb{
+    justify-content: center;
+    display: flex;
+    text-align: center;
+}
+.thmsec{
+    margin: 2rem;
+}
+.thumb img{
+    height: 20rem;
+    width: auto;
+    margin-bottom: 3rem;
+    justify-content: space-around;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    border-radius: 1rem; /* Optional: Adds rounded corners */
+    border: 2px solid var(--some-color); /* Adds a border */
+}
+.contact{
+    background-color: black;
+    color: var(--bg-color);
+}
+
+.contact form{
+    max-width: 80rem;
+    margin: 1rem auto; /* first top-bottom then left and right*/
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.contact form .input-box{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.contact form .input-box input,
+.contact form textarea{
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    background-color: black;
+    color:white;
+    border-radius: 0.8rem;
+    border: 0.25rem solid var(--some-color);
+    margin: 0.7rem 0;
+    resize: none;
+}
+.contact form .input-box input{
+    width: 49%;
+    margin: 0.7rem 0.35rem;
+    
+}
+.contact form .btn{
+    margin-top: 2rem;
+}
+.contact .btn{
+    background-color: black;
+    border-radius: 0.8rem;
+    color: var(--some-color);
+    font-size: 1.4rem;
+    padding: 0.5rem 1rem; /* Adjust padding */
+    border: 2px solid var(--some-color);
+
+
+}
+.contact .btn:hover{
+    background-color: var(--some-color);
+    color: #fff;
+    box-shadow:0 0 25px var(--some-color);
+
+}
+.footer{
+    background-color: rgb(61, 58, 58);
+    position: relative;
+    border-bottom: 0;
+    width: 100%;
+    padding: 40px 0;
+    
+    
+}
+.footer p{
+    color: var(--some-color);
+    text-align: center;
+    
+}
+.footer .social-media{
+    text-align: center;
+    padding-bottom: 25px;
+
+}
+.footer .social-media a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 42px;
+    height: 42px;
+    background: transparent;
+    border: 0.2rem solid var(--some-color);
+    border-radius: 50%;
+    font-size: 2rem;
+    color: var(--some-color);
+    margin: 3rem 1.5rem 3rem 0;
+    transition: 0.3s ease;
+}
+.footer .social-media a:hover{
+    transform:scale(1.2) translateY(-10px) ;
+    background-color: var(--some-color);
+    color: var(--bg-color);
+    box-shadow:0 0 25px var(--some-color);
+}
+
+
